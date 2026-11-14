@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+
+  <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
@@ -21,11 +22,7 @@
     nav, .no-print, #msg, .modal, .hero-section, .features-section, footer { display: none !important; }
     body { background: white !important; padding: 0 !important; }
     main { padding: 20px !important; max-width: 100% !important; }
-    .bg-blue-900, .bg-gradient-to-br { 
-      background: #1e3a8a !important; 
-      -webkit-print-color-adjust: exact !important;
-      print-color-adjust: exact !important;
-    }
+    .bg-blue-900, .bg-gradient-to-br { background: #1e3a8a !important; -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
     button { display: none !important; }
   }
 </style>
@@ -52,24 +49,17 @@
 <section class="hero-section gradient-bg hero-pattern text-white py-20 px-4 no-print">
   <div class="max-w-5xl mx-auto text-center">
     <div class="inline-block glass px-4 py-2 rounded-full text-sm mb-6">✨ منصة موثوقة لفحص المركبات</div>
-    <h1 class="text-4xl md:text-6xl font-black mb-6 leading-tight">
-      تحقّق من أي مركبة<br>
-      <span class="bg-gradient-to-r from-emerald-400 to-blue-400 bg-clip-text text-transparent">في ثوانٍ معدودة</span>
-    </h1>
+    <h1 class="text-4xl md:text-6xl font-black mb-6 leading-tight">تحقّق من أي مركبة<br><span class="bg-gradient-to-r from-emerald-400 to-blue-400 bg-clip-text text-transparent">في ثوانٍ معدودة</span></h1>
     <p class="text-xl text-blue-100 mb-10 max-w-2xl mx-auto leading-relaxed">احصل على تقرير فوري ومفصّل من مصادر رسمية عالمية</p>
-    
     <div class="glass rounded-2xl p-6 max-w-2xl mx-auto">
       <div class="flex flex-col sm:flex-row gap-3">
-        <input id="vin" type="text" maxlength="17" placeholder="أدخل رقم الهيكل (17 حرف)" 
-          class="flex-1 px-5 py-4 bg-white/95 text-slate-900 rounded-xl text-lg uppercase tracking-wider font-mono focus:outline-none focus:ring-4 focus:ring-emerald-400/50">
+        <input id="vin" type="text" maxlength="17" placeholder="أدخل رقم الهيكل (17 حرف)" class="flex-1 px-5 py-4 bg-white/95 text-slate-900 rounded-xl text-lg uppercase tracking-wider font-mono focus:outline-none focus:ring-4 focus:ring-emerald-400/50">
         <button onclick="checkVIN()" class="btn-glow bg-emerald-500 hover:bg-emerald-600 text-white font-bold px-8 py-4 rounded-xl flex items-center justify-center gap-2">
-          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
-          فحص الآن
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>فحص الآن
         </button>
       </div>
       <div id="msg" class="mt-4"></div>
     </div>
-    
     <div class="grid grid-cols-3 gap-4 max-w-xl mx-auto mt-10">
       <div class="glass rounded-xl p-4"><p class="text-3xl font-bold text-emerald-400">100%</p><p class="text-xs text-blue-200 mt-1">مجاني بالكامل</p></div>
       <div class="glass rounded-xl p-4"><p class="text-3xl font-bold text-emerald-400">4+</p><p class="text-xs text-blue-200 mt-1">مصادر رسمية</p></div>
@@ -87,23 +77,19 @@
     <div class="grid md:grid-cols-4 gap-6">
       <div class="bg-gradient-to-br from-blue-50 to-white p-5 rounded-2xl border border-blue-100 hover:shadow-xl transition-all">
         <div class="w-12 h-12 bg-gradient-to-br from-blue-600 to-blue-800 rounded-xl flex items-center justify-center mb-3 shadow-lg text-white font-bold">N</div>
-        <h3 class="text-lg font-bold text-slate-900 mb-2">NHTSA 🇺🇸</h3>
-        <p class="text-slate-600 text-xs">فك الترميز + الاستدعاءات</p>
+        <h3 class="text-lg font-bold text-slate-900 mb-2">NHTSA 🇺🇸</h3><p class="text-slate-600 text-xs">فك الترميز + الاستدعاءات</p>
       </div>
       <div class="bg-gradient-to-br from-red-50 to-white p-5 rounded-2xl border border-red-100 hover:shadow-xl transition-all">
         <div class="w-12 h-12 bg-gradient-to-br from-red-500 to-red-700 rounded-xl flex items-center justify-center mb-3 shadow-lg text-white font-bold">N</div>
-        <h3 class="text-lg font-bold text-slate-900 mb-2">NICB 🇺🇸</h3>
-        <p class="text-slate-600 text-xs">السرقة + الخردة</p>
+        <h3 class="text-lg font-bold text-slate-900 mb-2">NICB 🇺🇸</h3><p class="text-slate-600 text-xs">السرقة + الخردة</p>
       </div>
       <div class="bg-gradient-to-br from-emerald-50 to-white p-5 rounded-2xl border border-emerald-100 hover:shadow-xl transition-all">
         <div class="w-12 h-12 bg-gradient-to-br from-emerald-500 to-emerald-700 rounded-xl flex items-center justify-center mb-3 shadow-lg text-white font-bold">D</div>
-        <h3 class="text-lg font-bold text-slate-900 mb-2">DVLA 🇬🇧</h3>
-        <p class="text-slate-600 text-xs">الفحص الدوري + العداد</p>
+        <h3 class="text-lg font-bold text-slate-900 mb-2">DVLA 🇬🇧</h3><p class="text-slate-600 text-xs">الفحص الدوري + العداد</p>
       </div>
       <div class="bg-gradient-to-br from-purple-50 to-white p-5 rounded-2xl border border-purple-100 hover:shadow-xl transition-all">
         <div class="w-12 h-12 bg-gradient-to-br from-purple-600 to-purple-800 rounded-xl flex items-center justify-center mb-3 shadow-lg text-white font-bold">H</div>
-        <h3 class="text-lg font-bold text-slate-900 mb-2">Histovec 🇫🇷</h3>
-        <p class="text-slate-600 text-xs">الحوادث + الرهونات</p>
+        <h3 class="text-lg font-bold text-slate-900 mb-2">Histovec 🇫🇷</h3><p class="text-slate-600 text-xs">الحوادث + الرهونات</p>
       </div>
     </div>
   </div>
@@ -118,52 +104,84 @@
           <p id="vinDisplay" class="text-2xl font-bold font-mono"></p>
           <div id="summary" class="mt-2"></div>
         </div>
-        <button onclick="window.print()" class="bg-white/20 hover:bg-white/30 border border-white/30 text-white font-bold px-4 py-2 rounded-lg flex items-center gap-2 text-sm no-print transition-all">
-          🖨️ طباعة
-        </button>
+        <button onclick="window.print()" class="bg-white/20 hover:bg-white/30 border border-white/30 text-white font-bold px-4 py-2 rounded-lg flex items-center gap-2 text-sm no-print transition-all">🖨️ طباعة</button>
       </div>
     </div>
     <div id="recallBox"></div>
     <div id="sections"></div>
     <div id="officialSources" class="mt-6"></div>
     
-    <!-- تذييل التقرير - ظاهر دائماً -->
     <div id="reportFooter" class="mt-8 pt-6 border-t-2 border-slate-300">
       <p class="font-bold text-slate-900 text-center mb-3 text-base">تقرير فحص المركبة — AutoVerify Pro</p>
       <p class="text-center text-sm text-slate-600 mb-5">تاريخ التقرير: <span id="printDate"></span></p>
-      
       <div class="mb-5">
         <p class="font-bold text-slate-800 text-center mb-4 text-sm">مصادر البيانات الرسمية:</p>
         <table style="width: 100%; max-width: 500px; margin: 0 auto; border-collapse: collapse;">
           <tr>
-            <td style="border: 1px solid #cbd5e1; padding: 12px; text-align: center; background: #f8fafc;">
-              <p style="font-weight: bold; font-size: 14px; margin: 0;">🇺🇸 NHTSA</p>
-              <p style="font-size: 11px; color: #475569; margin: 4px 0 0 0;">فك الترميز + الاستدعاءات</p>
-            </td>
-            <td style="border: 1px solid #cbd5e1; padding: 12px; text-align: center; background: #f8fafc;">
-              <p style="font-weight: bold; font-size: 14px; margin: 0;">🇺🇸 NICB</p>
-              <p style="font-size: 11px; color: #475569; margin: 4px 0 0 0;">السرقة + الخردة</p>
-            </td>
+            <td style="border: 1px solid #cbd5e1; padding: 12px; text-align: center; background: #f8fafc;"><p style="font-weight: bold; font-size: 14px; margin: 0;">🇺🇸 NHTSA</p><p style="font-size: 11px; color: #475569; margin: 4px 0 0 0;">فك الترميز + الاستدعاءات</p></td>
+            <td style="border: 1px solid #cbd5e1; padding: 12px; text-align: center; background: #f8fafc;"><p style="font-weight: bold; font-size: 14px; margin: 0;">🇺🇸 NICB</p><p style="font-size: 11px; color: #475569; margin: 4px 0 0 0;">السرقة + الخردة</p></td>
           </tr>
           <tr>
-            <td style="border: 1px solid #cbd5e1; padding: 12px; text-align: center; background: #f8fafc;">
-              <p style="font-weight: bold; font-size: 14px; margin: 0;">🇬🇧 DVLA</p>
-              <p style="font-size: 11px; color: #475569; margin: 4px 0 0 0;">الفحص الدوري + العداد</p>
-            </td>
-            <td style="border: 1px solid #cbd5e1; padding: 12px; text-align: center; background: #f8fafc;">
-              <p style="font-weight: bold; font-size: 14px; margin: 0;">🇫🇷 Histovec</p>
-              <p style="font-size: 11px; color: #475569; margin: 4px 0 0 0;">الحوادث + الرهونات</p>
-            </td>
+            <td style="border: 1px solid #cbd5e1; padding: 12px; text-align: center; background: #f8fafc;"><p style="font-weight: bold; font-size: 14px; margin: 0;">🇬🇧 DVLA</p><p style="font-size: 11px; color: #475569; margin: 4px 0 0 0;">الفحص الدوري + العداد</p></td>
+            <td style="border: 1px solid #cbd5e1; padding: 12px; text-align: center; background: #f8fafc;"><p style="font-weight: bold; font-size: 14px; margin: 0;">🇫🇷 Histovec</p><p style="font-size: 11px; color: #475569; margin: 4px 0 0 0;">الحوادث + الرهونات</p></td>
           </tr>
         </table>
       </div>
-      
       <p class="mt-5 text-xs text-slate-500 text-center italic">هذا التقرير لأغراض المعلومات فقط ولا يضمن دقة سجل الحوادث أو الملكية.</p>
       <p class="text-xs text-slate-500 text-center mt-1">© 2026 AutoVerify Pro - جميع الحقوق محفوظة</p>
     </div>
   </div>
 </main>
 
+<!-- نوافذ المعلومات القانونية (جديدة) -->
+<div id="aboutModal" class="modal">
+  <div class="bg-white rounded-2xl p-8 max-w-2xl w-full mx-4 shadow-2xl max-h-[80vh] overflow-y-auto">
+    <div class="flex justify-between items-center mb-6 border-b pb-4">
+      <h3 class="text-2xl font-bold text-blue-900">من نحن</h3>
+      <button onclick="closeModal('aboutModal')" class="text-2xl text-gray-400 hover:text-gray-600">&times;</button>
+    </div>
+    <div class="text-slate-700 leading-relaxed space-y-4">
+      <p><strong>AutoVerify Pro</strong> هي منصة ذكية ومجانية تهدف إلى توفير الشفافية والثقة في سوق المركبات المستعملة. نتيح للمستخدمين فحص بيانات أي مركبة عبر رقم الهيكل (VIN) باستخدام مصادر بيانات حكومية ورسمية موثوقة حول العالم.</p>
+      <p><strong>مهمتنا:</strong> تمكين الأفراد، مراكز الفحص، وتجار السيارات من اتخاذ قرارات شراء مدروسة وآمنة، من خلال توفير بيانات دقيقة عن المواصفات، الاستدعاءات الأمنية، وسجلات الفحص الدوري.</p>
+      <p><strong>رؤيتنا:</strong> أن نكون المرجع الأول والأكثر موثوقية لفحص المركبات في المنطقة، مع التوسع المستمر لتشمل قواعد بيانات محلية وإقليمية إضافية.</p>
+    </div>
+  </div>
+</div>
+
+<div id="privacyModal" class="modal">
+  <div class="bg-white rounded-2xl p-8 max-w-2xl w-full mx-4 shadow-2xl max-h-[80vh] overflow-y-auto">
+    <div class="flex justify-between items-center mb-6 border-b pb-4">
+      <h3 class="text-2xl font-bold text-blue-900">سياسة الخصوصية</h3>
+      <button onclick="closeModal('privacyModal')" class="text-2xl text-gray-400 hover:text-gray-600">&times;</button>
+    </div>
+    <div class="text-slate-700 leading-relaxed space-y-4 text-sm">
+      <p>نحن في AutoVerify Pro نحترم خصوصيتك ونلتزم بحماية بياناتك. توضح هذه السياسة كيف نتعامل مع المعلومات:</p>
+      <ul class="list-disc list-inside space-y-2 mr-4">
+        <li><strong>جمع البيانات:</strong> نحن لا نجمع بياناتك الشخصية على خوادمنا. سجل البحث وبيانات الدخول يتم حفظها محلياً فقط على متصفحك (LocalStorage) ولا تنتقل إلينا.</li>
+        <li><strong>أرقام الهيكل (VIN):</strong> يتم إرسال رقم الهيكل مباشرة إلى واجهات برمجة التطبيقات (APIs) الرسمية للحكومات (مثل NHTSA) لغرض الفحص فقط، ولا نقوم بتخزينه في قواعد بياناتنا الخاصة.</li>
+        <li><strong>أطراف ثالثة:</strong> قد يحتوي التطبيق على روابط لمواقع حكومية رسمية. نحن لا نتحمل مسؤولية ممارسات الخصوصية الخاصة بتلك المواقع الخارجية.</li>
+        <li><strong>حذف البيانات:</strong> يمكنك مسح سجل البحث وبيانات الدخول في أي وقت من خلال خيار "تسجيل الخروج" أو مسح بيانات المتصفح.</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div id="legalModal" class="modal">
+  <div class="bg-white rounded-2xl p-8 max-w-2xl w-full mx-4 shadow-2xl max-h-[80vh] overflow-y-auto">
+    <div class="flex justify-between items-center mb-6 border-b pb-4">
+      <h3 class="text-2xl font-bold text-blue-900">الإطار القانوني وإخلاء المسؤولية</h3>
+      <button onclick="closeModal('legalModal')" class="text-2xl text-gray-400 hover:text-gray-600">&times;</button>
+    </div>
+    <div class="text-slate-700 leading-relaxed space-y-4 text-sm">
+      <p><strong>1. طبيعة الخدمة:</strong> تقدم منصة AutoVerify Pro بيانات مجمعة من مصادر عامة وحكومية مفتوحة لأغراض المعلومات العامة فقط.</p>
+      <p><strong>2. إخلاء المسؤولية:</strong> لا نضمن دقة أو اكتمال سجل الحوادث، ملكية المركبة، قراءات عداد المسافات، أو وجود عيوب خفية. البيانات المعروضة تعكس ما هو متاح في السجلات الرسمية وقت الفحص فقط.</p>
+      <p><strong>3. التوصية:</strong> يوصى بشدة بإجراء فحص ميكانيكي شامل في مركز فحص معتمد، والتحقق من المستندات الرسمية المحلية قبل إتمام أي عملية شراء أو بيع.</p>
+      <p><strong>4. الاستخدام:</strong> باستخدامك لهذه المنصة، فإنك توافق على أن المنصة غير مسؤولة عن أي خسائر مالية أو أضرار ناتجة عن الاعتماد الكلي على هذا التقرير.</p>
+    </div>
+  </div>
+</div>
+
+<!-- نوافذ الدخول والتسجيل والسجل والمطور (موجودة مسبقاً) -->
 <div id="loginModal" class="modal">
   <div class="bg-white rounded-2xl p-8 max-w-sm w-full mx-4 shadow-2xl">
     <h3 class="text-xl font-bold mb-4">تسجيل الدخول</h3>
@@ -207,27 +225,12 @@
       <button onclick="closeModal('adminModal')" class="text-2xl text-gray-400 hover:text-gray-600">&times;</button>
     </div>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
-      <div class="bg-gradient-to-br from-blue-500 to-blue-700 text-white p-5 rounded-xl shadow">
-        <p class="text-sm opacity-90">إجمالي المستخدمين</p>
-        <p id="statUsers" class="text-4xl font-bold mt-2">0</p>
-      </div>
-      <div class="bg-gradient-to-br from-emerald-500 to-emerald-700 text-white p-5 rounded-xl shadow">
-        <p class="text-sm opacity-90">إجمالي عمليات البحث</p>
-        <p id="statSearches" class="text-4xl font-bold mt-2">0</p>
-      </div>
-      <div class="bg-gradient-to-br from-purple-500 to-purple-700 text-white p-5 rounded-xl shadow">
-        <p class="text-sm opacity-90">عمليات اليوم</p>
-        <p id="statToday" class="text-4xl font-bold mt-2">0</p>
-      </div>
+      <div class="bg-gradient-to-br from-blue-500 to-blue-700 text-white p-5 rounded-xl shadow"><p class="text-sm opacity-90">إجمالي المستخدمين</p><p id="statUsers" class="text-4xl font-bold mt-2">0</p></div>
+      <div class="bg-gradient-to-br from-emerald-500 to-emerald-700 text-white p-5 rounded-xl shadow"><p class="text-sm opacity-90">إجمالي عمليات البحث</p><p id="statSearches" class="text-4xl font-bold mt-2">0</p></div>
+      <div class="bg-gradient-to-br from-purple-500 to-purple-700 text-white p-5 rounded-xl shadow"><p class="text-sm opacity-90">عمليات اليوم</p><p id="statToday" class="text-4xl font-bold mt-2">0</p></div>
     </div>
-    <div class="mb-6">
-      <h4 class="text-lg font-bold text-slate-800 mb-3">👥 قائمة المستخدمين</h4>
-      <div id="adminUsersList" class="space-y-2"></div>
-    </div>
-    <div>
-      <h4 class="text-lg font-bold text-slate-800 mb-3">🔍 آخر عمليات البحث</h4>
-      <div id="adminSearchesList" class="space-y-2"></div>
-    </div>
+    <div class="mb-6"><h4 class="text-lg font-bold text-slate-800 mb-3">👥 قائمة المستخدمين</h4><div id="adminUsersList" class="space-y-2"></div></div>
+    <div><h4 class="text-lg font-bold text-slate-800 mb-3">🔍 آخر عمليات البحث</h4><div id="adminSearchesList" class="space-y-2"></div></div>
   </div>
 </div>
 
@@ -253,9 +256,9 @@
       <div>
         <h4 class="font-bold mb-3">الشركة</h4>
         <ul class="space-y-2 text-sm text-slate-400">
-          <li><a href="#" class="hover:text-white">من نحن</a></li>
-          <li><a href="#" class="hover:text-white">اتصل بنا</a></li>
-          <li><a href="#" class="hover:text-white">الخصوصية</a></li>
+          <li><a href="#" onclick="openInfoModal('about')" class="hover:text-white cursor-pointer">من نحن</a></li>
+          <li><a href="#" onclick="openInfoModal('privacy')" class="hover:text-white cursor-pointer">سياسة الخصوصية</a></li>
+          <li><a href="#" onclick="openInfoModal('legal')" class="hover:text-white cursor-pointer">الإطار القانوني</a></li>
         </ul>
       </div>
       <div>
@@ -273,6 +276,7 @@
 function showLogin() { document.getElementById('loginModal').classList.add('active'); }
 function showRegister() { document.getElementById('loginModal').classList.remove('active'); document.getElementById('registerModal').classList.add('active'); }
 function closeModal(id) { document.getElementById(id).classList.remove('active'); }
+function openInfoModal(type) { document.getElementById(type + 'Modal').classList.add('active'); }
 
 function doLogin(e) {
   e.preventDefault();
@@ -315,12 +319,7 @@ function updateUserUI() {
   const adminBtn = document.getElementById('adminBtn');
   if (user) {
     btn.innerHTML = '👤 ' + user.name;
-    btn.onclick = function() {
-      if (confirm('هل تريد تسجيل الخروج؟')) {
-        localStorage.removeItem('currentUser');
-        updateUserUI();
-      }
-    };
+    btn.onclick = function() { if (confirm('هل تريد تسجيل الخروج؟')) { localStorage.removeItem('currentUser'); updateUserUI(); } };
     if (isAdmin()) adminBtn.classList.remove('hidden'); else adminBtn.classList.add('hidden');
   } else {
     btn.innerHTML = '👤 دخول';
@@ -331,10 +330,7 @@ function updateUserUI() {
 
 function checkVIN() {
   const vin = document.getElementById('vin').value.trim().toUpperCase();
-  if (vin.length !== 17) {
-    document.getElementById('msg').innerHTML = '<p class="text-red-400 font-bold mt-4">❌ يجب أن يتكون من 17 حرفاً</p>';
-    return;
-  }
+  if (vin.length !== 17) { document.getElementById('msg').innerHTML = '<p class="text-red-400 font-bold mt-4">❌ يجب أن يتكون من 17 حرفاً</p>'; return; }
   document.getElementById('msg').innerHTML = '<p class="text-emerald-400 font-bold mt-4">⏳ جاري الفحص...</p>';
   document.getElementById('recallBox').innerHTML = '';
   document.getElementById('officialSources').innerHTML = '';
@@ -349,13 +345,9 @@ function checkVIN() {
         checkRecalls(vin);
         showOfficialSources(vin);
         document.getElementById('results').scrollIntoView({ behavior: 'smooth' });
-      } else {
-        document.getElementById('msg').innerHTML = '<p class="text-red-400 mt-4">❌ لم يتم العثور على بيانات</p>';
-      }
+      } else { document.getElementById('msg').innerHTML = '<p class="text-red-400 mt-4">❌ لم يتم العثور على بيانات</p>'; }
     })
-    .catch(e => {
-      document.getElementById('msg').innerHTML = '<p class="text-red-400 mt-4">❌ فشل الاتصال</p>';
-    });
+    .catch(e => { document.getElementById('msg').innerHTML = '<p class="text-red-400 mt-4">❌ فشل الاتصال</p>'; });
 }
 
 function showResults(vin, items) {
@@ -368,20 +360,14 @@ function showResults(vin, items) {
   
   const sections = document.getElementById('sections');
   sections.innerHTML = '';
-  const cats = {
-    'المعلومات الأساسية': ['Make', 'Model', 'Model Year', 'Trim', 'Vehicle Type'],
-    'المحرك': ['Engine Model', 'Engine Number of Cylinders', 'Displacement (L)', 'Fuel Type - Primary'],
-    'التصنيع': ['Plant Country', 'Plant City']
-  };
+  const cats = { 'المعلومات الأساسية': ['Make', 'Model', 'Model Year', 'Trim', 'Vehicle Type'], 'المحرك': ['Engine Model', 'Engine Number of Cylinders', 'Displacement (L)', 'Fuel Type - Primary'], 'التصنيع': ['Plant Country', 'Plant City'] };
   for (const [cat, keys] of Object.entries(cats)) {
     const catItems = items.filter(i => keys.includes(i.Variable) && i.Value && i.Value !== 'null' && i.Value !== 'Not Applicable');
     if (catItems.length > 0) {
       const div = document.createElement('div');
       div.className = 'bg-slate-50 p-4 rounded-xl mb-4 border border-slate-200';
       let html = '<h3 class="font-bold text-blue-900 mb-3 border-b pb-2">' + cat + '</h3><div class="grid grid-cols-1 sm:grid-cols-2 gap-3">';
-      catItems.forEach(i => {
-        html += '<div class="bg-white p-2 rounded-lg shadow-sm"><p class="text-xs text-slate-500 mb-1">' + i.Variable + '</p><p class="font-bold text-slate-800">' + i.Value + '</p></div>';
-      });
+      catItems.forEach(i => { html += '<div class="bg-white p-2 rounded-lg shadow-sm"><p class="text-xs text-slate-500 mb-1">' + i.Variable + '</p><p class="font-bold text-slate-800">' + i.Value + '</p></div>'; });
       html += '</div>';
       div.innerHTML = html;
       sections.appendChild(div);
@@ -400,9 +386,7 @@ function showOfficialSources(vin) {
   html += '<a href="https://vehicleenquiry.service.gov.uk/" target="_blank" class="source-card bg-white p-4 rounded-lg border border-slate-200 hover:border-emerald-500 flex items-start gap-3"><div class="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center flex-shrink-0"><span class="text-2xl">🇬🇧</span></div><div class="flex-1"><p class="font-bold text-slate-900">DVLA MOT History</p><p class="text-xs text-slate-600 mt-1">الفحص الدوري + قراءات العداد</p><p class="text-xs text-emerald-600 font-bold mt-1">✓ مجاني 100% - رسمي</p></div></a>';
   html += '<a href="https://histovec.interieur.gouv.fr/" target="_blank" class="source-card bg-white p-4 rounded-lg border border-slate-200 hover:border-blue-500 flex items-start gap-3"><div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0"><span class="text-2xl">🇫🇷</span></div><div class="flex-1"><p class="font-bold text-slate-900">Histovec</p><p class="text-xs text-slate-600 mt-1">الحوادث + الرهونات + الملكية</p><p class="text-xs text-emerald-600 font-bold mt-1">✓ مجاني 100% - رسمي</p></div></a>';
   html += '<a href="https://www.nhtsa.gov/recalls" target="_blank" class="source-card bg-white p-4 rounded-lg border border-slate-200 hover:border-purple-500 flex items-start gap-3"><div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center flex-shrink-0"><span class="text-2xl">🇺🇸</span></div><div class="flex-1"><p class="font-bold text-slate-900">NHTSA Recalls</p><p class="text-xs text-slate-600 mt-1">الاستدعاءات الأمنية المباشرة</p><p class="text-xs text-emerald-600 font-bold mt-1">✓ مجاني 100% - رسمي</p></div></a>';
-  html += '</div>';
-  html += '<p class="text-xs text-slate-500 mt-4 text-center">💡 نصيحة: افتح الروابط في تبويب جديد وأدخل رقم الهيكل: <span class="font-mono font-bold">' + vin + '</span></p>';
-  html += '</div>';
+  html += '</div><p class="text-xs text-slate-500 mt-4 text-center">💡 نصيحة: افتح الروابط في تبويب جديد وأدخل رقم الهيكل: <span class="font-mono font-bold">' + vin + '</span></p></div>';
   box.innerHTML = html;
 }
 
@@ -417,29 +401,15 @@ function saveSearch(vin) {
 function showHistory() {
   const user = JSON.parse(localStorage.getItem('currentUser') || 'null');
   const list = document.getElementById('historyList');
-  if (!user) {
-    list.innerHTML = '<p class="text-center text-slate-500 py-8">⚠️ يجب تسجيل الدخول أولاً</p>';
-    document.getElementById('historyModal').classList.add('active');
-    return;
-  }
+  if (!user) { list.innerHTML = '<p class="text-center text-slate-500 py-8">⚠️ يجب تسجيل الدخول أولاً</p>'; document.getElementById('historyModal').classList.add('active'); return; }
   const searches = JSON.parse(localStorage.getItem('searches') || '[]');
   const userSearches = searches.filter(s => s.userId === user.id);
-  if (userSearches.length === 0) {
-    list.innerHTML = '<p class="text-center text-slate-500 py-8">📭 لا يوجد سجل بحث</p>';
-  } else {
-    list.innerHTML = userSearches.slice().reverse().map(s => {
-      const date = new Date(s.date).toLocaleString('ar-EG');
-      return '<div class="bg-slate-50 p-3 rounded-lg border flex justify-between items-center"><div><p class="font-mono font-bold text-lg">' + s.vin + '</p><p class="text-xs text-slate-500">' + date + '</p></div><button onclick="searchFromHistory(\'' + s.vin + '\')" class="bg-blue-900 text-white px-3 py-1 rounded text-sm">عرض</button></div>';
-    }).join('');
-  }
+  if (userSearches.length === 0) { list.innerHTML = '<p class="text-center text-slate-500 py-8">📭 لا يوجد سجل بحث</p>'; } 
+  else { list.innerHTML = userSearches.slice().reverse().map(s => '<div class="bg-slate-50 p-3 rounded-lg border flex justify-between items-center"><div><p class="font-mono font-bold text-lg">' + s.vin + '</p><p class="text-xs text-slate-500">' + new Date(s.date).toLocaleString('ar-EG') + '</p></div><button onclick="searchFromHistory(\'' + s.vin + '\')" class="bg-blue-900 text-white px-3 py-1 rounded text-sm">عرض</button></div>').join(''); }
   document.getElementById('historyModal').classList.add('active');
 }
 
-function searchFromHistory(vin) {
-  closeModal('historyModal');
-  document.getElementById('vin').value = vin;
-  checkVIN();
-}
+function searchFromHistory(vin) { closeModal('historyModal'); document.getElementById('vin').value = vin; checkVIN(); }
 
 function checkRecalls(vin) {
   const box = document.getElementById('recallBox');
@@ -448,16 +418,9 @@ function checkRecalls(vin) {
     .then(r => r.json())
     .then(data => {
       const list = data.results || [];
-      if (list.length === 0) {
-        box.innerHTML = '<div class="bg-emerald-50 border-r-4 border-emerald-500 p-4 rounded-xl mb-4"><p class="font-bold text-emerald-800">✅ لا توجد استدعاءات أمنية</p></div>';
-        return;
-      }
+      if (list.length === 0) { box.innerHTML = '<div class="bg-emerald-50 border-r-4 border-emerald-500 p-4 rounded-xl mb-4"><p class="font-bold text-emerald-800">✅ لا توجد استدعاءات أمنية</p></div>'; return; }
       let html = '<div class="bg-red-50 border-r-4 border-red-500 p-4 rounded-xl mb-4"><p class="font-bold text-red-800 mb-1">⚠️ يوجد ' + list.length + ' استدعاء أمني</p>';
-      list.forEach(function(r, i) {
-        html += '<div class="bg-white p-3 rounded-lg border border-red-200 mb-2"><p class="font-bold text-red-900 text-sm">' + (i + 1) + '. ' + (r.Component || 'غير محدد') + '</p>';
-        if (r.Summary) html += '<p class="text-sm text-slate-700 mt-2">' + r.Summary + '</p>';
-        html += '</div>';
-      });
+      list.forEach(function(r, i) { html += '<div class="bg-white p-3 rounded-lg border border-red-200 mb-2"><p class="font-bold text-red-900 text-sm">' + (i + 1) + '. ' + (r.Component || 'غير محدد') + '</p>'; if (r.Summary) html += '<p class="text-sm text-slate-700 mt-2">' + r.Summary + '</p>'; html += '</div>'; });
       html += '</div>';
       box.innerHTML = html;
     })
@@ -475,33 +438,16 @@ function showAdminPanel() {
   document.getElementById('statToday').textContent = todaySearches;
   
   const usersList = document.getElementById('adminUsersList');
-  if (users.length === 0) {
-    usersList.innerHTML = '<p class="text-center text-slate-500 py-4">لا يوجد مستخدمون</p>';
-  } else {
-    usersList.innerHTML = users.map(u => {
-      const userSearches = searches.filter(s => s.userId === u.id).length;
-      const date = new Date(u.createdAt).toLocaleDateString('ar-EG');
-      const badge = u.email === 'admin@autoverify.com' ? '<span class="bg-purple-100 text-purple-700 text-xs px-2 py-0.5 rounded mr-2">مطور</span>' : '';
-      return '<div class="bg-slate-50 p-3 rounded-lg border flex justify-between items-center"><div><p class="font-bold">' + u.name + ' ' + badge + '</p><p class="text-xs text-slate-500">' + u.email + '</p></div><div class="text-left"><p class="text-sm font-bold text-emerald-600">' + userSearches + ' بحث</p><p class="text-xs text-slate-400">' + date + '</p></div></div>';
-    }).join('');
-  }
+  if (users.length === 0) { usersList.innerHTML = '<p class="text-center text-slate-500 py-4">لا يوجد مستخدمون</p>'; } 
+  else { usersList.innerHTML = users.map(u => { const userSearches = searches.filter(s => s.userId === u.id).length; const date = new Date(u.createdAt).toLocaleDateString('ar-EG'); const badge = u.email === 'admin@autoverify.com' ? '<span class="bg-purple-100 text-purple-700 text-xs px-2 py-0.5 rounded mr-2">مطور</span>' : ''; return '<div class="bg-slate-50 p-3 rounded-lg border flex justify-between items-center"><div><p class="font-bold">' + u.name + ' ' + badge + '</p><p class="text-xs text-slate-500">' + u.email + '</p></div><div class="text-left"><p class="text-sm font-bold text-emerald-600">' + userSearches + ' بحث</p><p class="text-xs text-slate-400">' + date + '</p></div></div>'; }).join(''); }
   
   const searchesList = document.getElementById('adminSearchesList');
-  if (searches.length === 0) {
-    searchesList.innerHTML = '<p class="text-center text-slate-500 py-4">لا توجد عمليات بحث</p>';
-  } else {
-    searchesList.innerHTML = searches.slice().reverse().slice(0, 20).map(s => {
-      const date = new Date(s.date).toLocaleString('ar-EG');
-      return '<div class="bg-slate-50 p-3 rounded-lg border flex justify-between items-center"><div><p class="font-mono font-bold">' + s.vin + '</p><p class="text-xs text-slate-500">بواسطة: ' + (s.userName || 'غير معروف') + '</p></div><p class="text-xs text-slate-400">' + date + '</p></div>';
-    }).join('');
-  }
+  if (searches.length === 0) { searchesList.innerHTML = '<p class="text-center text-slate-500 py-4">لا توجد عمليات بحث</p>'; } 
+  else { searchesList.innerHTML = searches.slice().reverse().slice(0, 20).map(s => '<div class="bg-slate-50 p-3 rounded-lg border flex justify-between items-center"><div><p class="font-mono font-bold">' + s.vin + '</p><p class="text-xs text-slate-500">بواسطة: ' + (s.userName || 'غير معروف') + '</p></div><p class="text-xs text-slate-400">' + new Date(s.date).toLocaleString('ar-EG') + '</p></div>').join(''); }
   document.getElementById('adminModal').classList.add('active');
 }
 
-window.onload = function() {
-  updateUserUI();
-  console.log('✅ تم تحميل التطبيق — تذييل التقرير ظاهر دائماً');
-};
+window.onload = function() { updateUserUI(); console.log('✅ تم تحميل التطبيق بنجاح'); };
 </script>
 </body>
 </html>
