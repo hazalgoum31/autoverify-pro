@@ -127,13 +127,13 @@
     <div id="sections"></div>
     <div id="officialSources" class="mt-6"></div>
     
-    <!-- تذييل الطباعة - ظاهر دائماً -->
-    <div style="margin-top: 40px; padding-top: 24px; border-top: 2px solid #cbd5e1;">
-      <p style="font-weight: bold; color: #0f172a; text-align: center; margin-bottom: 12px; font-size: 16px;">تقرير فحص المركبة — AutoVerify Pro</p>
-      <p style="text-align: center; font-size: 14px; color: #475569; margin-bottom: 20px;">تاريخ الطباعة: <span id="printDate"></span></p>
+    <!-- تذييل التقرير - ظاهر دائماً -->
+    <div id="reportFooter" class="mt-8 pt-6 border-t-2 border-slate-300">
+      <p class="font-bold text-slate-900 text-center mb-3 text-base">تقرير فحص المركبة — AutoVerify Pro</p>
+      <p class="text-center text-sm text-slate-600 mb-5">تاريخ التقرير: <span id="printDate"></span></p>
       
-      <div style="margin-bottom: 20px;">
-        <p style="font-weight: bold; color: #1e293b; text-align: center; margin-bottom: 16px; font-size: 14px;">مصادر البيانات الرسمية:</p>
+      <div class="mb-5">
+        <p class="font-bold text-slate-800 text-center mb-4 text-sm">مصادر البيانات الرسمية:</p>
         <table style="width: 100%; max-width: 500px; margin: 0 auto; border-collapse: collapse;">
           <tr>
             <td style="border: 1px solid #cbd5e1; padding: 12px; text-align: center; background: #f8fafc;">
@@ -158,8 +158,8 @@
         </table>
       </div>
       
-      <p style="margin-top: 20px; font-size: 11px; color: #64748b; text-align: center; font-style: italic;">هذا التقرير لأغراض المعلومات فقط ولا يضمن دقة سجل الحوادث أو الملكية.</p>
-      <p style="font-size: 11px; color: #64748b; text-align: center; margin-top: 4px;">© 2026 AutoVerify Pro - جميع الحقوق محفوظة</p>
+      <p class="mt-5 text-xs text-slate-500 text-center italic">هذا التقرير لأغراض المعلومات فقط ولا يضمن دقة سجل الحوادث أو الملكية.</p>
+      <p class="text-xs text-slate-500 text-center mt-1">© 2026 AutoVerify Pro - جميع الحقوق محفوظة</p>
     </div>
   </div>
 </main>
@@ -500,7 +500,7 @@ function showAdminPanel() {
 
 window.onload = function() {
   updateUserUI();
-  console.log('✅ تم تحميل التطبيق — التذييل ظاهر دائماً');
+  console.log('✅ تم تحميل التطبيق — تذييل التقرير ظاهر دائماً');
 };
 </script>
 </body>
